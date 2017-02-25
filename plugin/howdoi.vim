@@ -15,7 +15,7 @@ if exists("g:howdoi")
     finish
 endif
 
-if !has('python')
+if !has('python') && !has('python3')
   echoerr "Required vim compiled with +python"
     finish
 endif
